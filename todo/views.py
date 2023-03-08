@@ -10,7 +10,6 @@ def get_todo_list(request):
     context = {
         'items': items
     }
-
     return render(request, 'todo/todo_list.html', context)
 
 
@@ -24,7 +23,6 @@ def add_item(request):
     context = {
         'form': form
     }
-
     return render(request, 'todo/add_item.html', context)
 
 
